@@ -1,0 +1,215 @@
+/* --------------------------
+   Global Styles
+--------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Consistent color theme */
+:root {
+    --primary-color: #004aad;
+    --secondary-color: #ffb703;
+    --accent-color: #023047;
+    --light-bg: #e3f2fd;
+}
+
+/* --------------------------
+   Header and Navigation
+--------------------------- */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+/* --------------------------
+   Section Styling
+--------------------------- */
+section {
+    padding: 40px 80px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    color: var(--accent-color);
+    text-align: center;
+}
+
+section p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* --------------------------
+   About Section
+--------------------------- */
+#about figure {
+    text-align: center;
+}
+
+#about img {
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+
+/* --------------------------
+   Projects Section
+--------------------------- */
+#projects ul {
+    list-style-type: square;
+    padding-left: 40px;
+}
+
+#projects article {
+    background-color: var(--light-bg);
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* --------------------------
+   Skills Table
+--------------------------- */
+#skills table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#skills th, #skills td {
+    padding: 12px;
+    text-align: center;
+}
+
+#skills th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#skills tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#skills tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* --------------------------
+   Buttons and Forms
+--------------------------- */
+form {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+input[type="submit"] {
+    background-color: var(--secondary-color);
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* --------------------------
+   Back to Top Button
+--------------------------- */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    display: none; /* hidden initially */
+    transition: all 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+/* --------------------------
+   Horizontal Rules and Footer
+--------------------------- */
+hr {
+    border: 2px solid var(--secondary-color);
+    width: 50%;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
